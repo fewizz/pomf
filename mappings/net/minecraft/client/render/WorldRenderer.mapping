@@ -18,6 +18,7 @@ CLASS dfo net/minecraft/client/render/WorldRenderer
 	FIELD W chunkBatcher Ldic;
 	FIELD X chunkRendererList Ldfe;
 	FIELD Y renderDistance I
+	FIELD Z entityRenderTicksToSkip I
 	FIELD a DIRECTIONS [Ley;
 	FIELD aa renderedEntities I
 	FIELD ad forcedFrustum Ldip;
@@ -40,6 +41,7 @@ CLASS dfo net/minecraft/client/render/WorldRenderer
 	FIELD j entityRenderDispatcher Ldkf;
 	FIELD k world Ldcm;
 	FIELD l chunkRenderers Ljava/util/Set;
+	FIELD n blockEntitiesToRender Ljava/util/Set;
 	FIELD o chunkRenderDispatcher Ldfy;
 	FIELD p starsDisplayList I
 	FIELD t starsBuffer Lcpu;
@@ -127,7 +129,6 @@ CLASS dfo net/minecraft/client/render/WorldRenderer
 		ARG 8 velocityX
 		ARG 10 velocityY
 		ARG 12 velocityZ
-	METHOD a (Lwr;)V
 	METHOD a getRandomParticleSpawnChance (Z)I
 		ARG 1 canSpawnOnMinimal
 	METHOD b drawEntityOutlinesFramebuffer ()V

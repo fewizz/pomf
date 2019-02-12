@@ -1,7 +1,14 @@
 CLASS dkf net/minecraft/client/render/entity/EntityRenderDispatcher
 	FIELD a textureManager Ldpe;
 	FIELD b world Lbcu;
+	FIELD c cameraEntity Lahi;
+	FIELD d targetedEntity Lahi;
+	FIELD e cameraYaw F
+	FIELD f cameraPitch F
 	FIELD g settings Lcqi;
+	FIELD h cameraX D
+	FIELD i cameraY D
+	FIELD j cameraZ D
 	FIELD k renderers Ljava/util/Map;
 	FIELD l skinMap Ljava/util/Map;
 	FIELD m playerRenderer Ldop;
@@ -14,12 +21,24 @@ CLASS dkf net/minecraft/client/render/entity/EntityRenderDispatcher
 		ARG 1 textureManager
 	METHOD a setRenderPosition (DDD)V
 		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a setCameraYaw (F)V
 	METHOD a getRenderer (Lahi;)Ldkg;
 	METHOD a renderHitbox (Lahi;DDDFF)V
 	METHOD a render (Lahi;DDDFFZ)V
 	METHOD a renderSecondPass (Lahi;F)V
+		ARG 2 tickDelta
 	METHOD a render (Lahi;FZ)V
+	METHOD a setWorld (Lbcu;)V
+	METHOD a prepare (Lbcu;Lcqu;Lahi;Lahi;Lcqi;F)V
+		ARG 6 tickDelta
 	METHOD a getRenderer (Ljava/lang/Class;)Ldkg;
+	METHOD a associate (Ljava/lang/Class;Ldkg;)V
+	METHOD b squareDistanceToCamera (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD b hasSecondPass (Lahi;)Z
 	METHOD c getFontRenderer ()Lcqu;
 	METHOD c setRenderOutlines (Z)V

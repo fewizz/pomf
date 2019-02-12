@@ -16,7 +16,7 @@ CLASS dhl net/minecraft/client/render/block/entity/BlockEntityRenderDispatcher
 	FIELD o fontRenderer Lcqu;
 	METHOD a getFontRenderer ()Lcqu;
 	METHOD a setWorld (Lbcu;)V
-	METHOD a configure (Lbcu;Ldpe;Lcqu;Lahi;Lcmx;F)V
+	METHOD a prepare (Lbcu;Ldpe;Lcqu;Lahi;Lcmx;F)V
 	METHOD a get (Lbow;)Ldhm;
 	METHOD a renderEntity (Lbow;DDDF)V
 		ARG 1 blockEntity

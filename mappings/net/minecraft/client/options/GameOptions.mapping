@@ -129,6 +129,7 @@ CLASS cqi net/minecraft/client/options/GameOptions
 	FIELD av client Lcqg;
 	FIELD aw difficulty Lagb;
 	FIELD ax hudHidden Z
+	FIELD ay perspectiveId I
 	FIELD az debugEnabled Z
 	FIELD b NARRATOR_SETTINGS [Ljava/lang/String;
 	FIELD c mouseSensitivity D
